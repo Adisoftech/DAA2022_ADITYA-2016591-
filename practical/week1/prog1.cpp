@@ -33,7 +33,7 @@ int arr[n];
     break;
         
     }
-        count++;
+        count++;//for finding total no of comparisions
         
     }
     if(ans==0)
