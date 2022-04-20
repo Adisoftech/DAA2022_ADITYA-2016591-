@@ -11,7 +11,7 @@ int binarysearch(int arr[],int key,int n)
     int mid;
     int count=0;
     while(lb<=ub)
-    {    count++;
+    {    
         mid=(lb+ub)/2;
         if(arr[mid]==key){
             
@@ -21,12 +21,14 @@ int binarysearch(int arr[],int key,int n)
         
         }
         if(key<arr[mid])
-        {
+        {count++;
             ub=mid-1;
            
         }
         if(key>arr[mid])
-        {lb=mid+1;
+        {
+            count++;
+            lb=mid+1;
     
             
         }
@@ -48,7 +50,7 @@ int arr[n];
    int key;
    cout<<"enter the key element";
    cin>>key;
-   ans=binarysearch(arr,key,n);
+   ans=binarysearch(arr,key,n);//calling binary search function
  if(ans==-1)
  cout<<"element not found";
  else
