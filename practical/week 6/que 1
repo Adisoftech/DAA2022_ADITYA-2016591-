@@ -9,7 +9,7 @@ class Graph{
    
     void addEdge(int src,int dest)
     {
-    adj[src].push_back(dest);    
+    adj[src].push_back(dest);       //adj[i]---->1 adj[i]------>2=>adj[i]---->1--->2
     }
     void dfs(int v)
     {
